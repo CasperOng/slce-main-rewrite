@@ -1,53 +1,31 @@
-// import { Layout, Text, Page } from '@vercel/examples-ui'
-// import { Chat } from '../components/Chat'
-
-// function Home() {
-//   return (
-//     <Page className="flex flex-col gap-12">
-//       <section className="flex flex-col gap-6">
-//         <Text variant="h1">Xiri</Text>
-//         <Text className="text-zinc-600">
-//           A simple chat bot is implemented using Next.js, API
-//           Routes, and OpenAI API.
-//         </Text>
-//       </section>
-
-//       <section className="flex flex-col gap-3">
-//         <Text variant="h2">Try to type something!</Text>
-//         <div className="lg:w-2/3">
-//           <Chat />
-//         </div>
-//       </section>
-//     </Page>
-//   )
-// }
-
-// Home.Layout = Layout
-
-// export default Home
-
 import { Text, Page } from '@vercel/examples-ui'
 import { Chat } from '../components/Chat'
+
+
 
 function Home() {
   return (
     <Page>
       <section>
         <Text variant="h1">Xiri</Text>
-        <Text className="text-zinc-600">
-          A simple chat bot is implemented using Next.js, API
-          Routes, and OpenAI API.
-        </Text>
       </section>
 
       <section>
-        <Text variant="h2">Try to type something!</Text>
+        <Text >Try to type something!</Text>
         <div className="lg:w-2/3">
           <Chat />
         </div>
       </section>
+
+      <footer>
+        <Text>Created by Casper Ong</Text>
+        <Text>Hosted on <a href="https://vercel.com/" target="_blank" rel="noopener noreferrer">Vercel</a></Text>
+        <Text>Licensed under the <a href="https://www.mozilla.org/en-US/MPL/2.0/" target="_blank" rel="noopener noreferrer">Mozilla Public License 2.0</a></Text>
+      </footer>
     </Page>
+
   )
 }
+
 
 export default Home
