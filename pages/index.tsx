@@ -6,6 +6,7 @@ import { Chat } from '../components/Chat'
 function Home() {
   return (
     <Page>
+      <link rel="stylesheet" type="text/css" href="./styles.css" />
       <section>
         <Text variant="h1">Xiri</Text>
       </section>
